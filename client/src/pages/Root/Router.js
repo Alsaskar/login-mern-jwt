@@ -10,7 +10,7 @@ const Router = () => {
             {
                 navigation.items &&
                 navigation.items.map((item, idx) => (
-                    <Route
+                    return <Route
                         exact={item.exact}
                         key={`${item.path}_${idx}`}
                         path={`${item.path}`}
